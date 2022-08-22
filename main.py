@@ -19,7 +19,8 @@ template_id = os.environ["TEMPLATE_ID"]
 
 def get_today():
   today =datetime.date.today()
-  return today
+  record_date=today.strftime("%Y/%m%d %H:%M:%S")
+  return record_datee
 
 
 def get_random_color():
