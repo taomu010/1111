@@ -27,10 +27,6 @@ def get_random_color():
   return "#%06x" % random.randint(0, 0xFFFFFF)
 
 
-def get_date():
-  date = datetime.today().strftime('%Y%m%d')
-  return date
-
 
 def get_weather():
   url = "http://autodev.openspeech.cn/csp/api/v2.1/weather?openId=aiuicus&clientType=android&sign=android&city=" + city
