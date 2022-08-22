@@ -6,9 +6,7 @@ import requests
 import os
 import random
 
-date = datetime.today().strftime('%Y%m%d')
-print(date)
-
+date = datetime.today()
 today = datetime.now()
 start_date = os.environ['START_DATE']
 city = os.environ['CITY']
@@ -21,6 +19,9 @@ user_id = os.environ["USER_ID"]
 template_id = os.environ["TEMPLATE_ID"]
 
 
+def get_date():
+  date = datetime.today().strftime('%Y%m%d')
+  return date
 
 
 def get_weather():
